@@ -1,0 +1,338 @@
+
+MicroControllersWeek2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000020c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001b8  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000020c  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000023c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  00000278  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000947  00000000  00000000  000002b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000083d  00000000  00000000  00000bf7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004e5  00000000  00000000  00001434  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000e4  00000000  00000000  0000191c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00007616  00000000  00000000  00001a00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000200  00000000  00000000  00009016  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00009216  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_macro  00000228  00000000  00000000  0000923e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	5d c0       	rjmp	.+186    	; 0xc0 <__vector_1>
+   6:	00 00       	nop
+   8:	8d c0       	rjmp	.+282    	; 0x124 <__vector_2>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	77 d0       	rcall	.+238    	; 0x188 <main>
+  9a:	8c c0       	rjmp	.+280    	; 0x1b4 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <wait>:
+				clock value is set. This is used by _delay_ms inside
+				util/delay.h
+Version :    	DMK, Initial code
+*******************************************************************/
+{
+	for (int i=0; i<ms; i++)
+  9e:	18 16       	cp	r1, r24
+  a0:	19 06       	cpc	r1, r25
+  a2:	6c f4       	brge	.+26     	; 0xbe <wait+0x20>
+  a4:	20 e0       	ldi	r18, 0x00	; 0
+  a6:	30 e0       	ldi	r19, 0x00	; 0
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  a8:	ef ec       	ldi	r30, 0xCF	; 207
+  aa:	f7 e0       	ldi	r31, 0x07	; 7
+  ac:	31 97       	sbiw	r30, 0x01	; 1
+  ae:	f1 f7       	brne	.-4      	; 0xac <wait+0xe>
+  b0:	00 c0       	rjmp	.+0      	; 0xb2 <wait+0x14>
+  b2:	00 00       	nop
+  b4:	2f 5f       	subi	r18, 0xFF	; 255
+  b6:	3f 4f       	sbci	r19, 0xFF	; 255
+  b8:	28 17       	cp	r18, r24
+  ba:	39 07       	cpc	r19, r25
+  bc:	a9 f7       	brne	.-22     	; 0xa8 <wait+0xa>
+  be:	08 95       	ret
+
+000000c0 <__vector_1>:
+}
+
+// Laat de lichtjes steeds een plekje naar boven verspringen op het bord en zet hem weer 
+// Bovenaan als die de bovenste lamp heeft bereikt.
+ISR( INT0_vect )
+{
+  c0:	1f 92       	push	r1
+  c2:	0f 92       	push	r0
+  c4:	0f b6       	in	r0, 0x3f	; 63
+  c6:	0f 92       	push	r0
+  c8:	11 24       	eor	r1, r1
+  ca:	0b b6       	in	r0, 0x3b	; 59
+  cc:	0f 92       	push	r0
+  ce:	2f 93       	push	r18
+  d0:	3f 93       	push	r19
+  d2:	4f 93       	push	r20
+  d4:	5f 93       	push	r21
+  d6:	6f 93       	push	r22
+  d8:	7f 93       	push	r23
+  da:	8f 93       	push	r24
+  dc:	9f 93       	push	r25
+  de:	af 93       	push	r26
+  e0:	bf 93       	push	r27
+  e2:	ef 93       	push	r30
+  e4:	ff 93       	push	r31
+	if(PORTC == 0b00000001)
+  e6:	85 b3       	in	r24, 0x15	; 21
+  e8:	81 30       	cpi	r24, 0x01	; 1
+  ea:	19 f4       	brne	.+6      	; 0xf2 <__vector_1+0x32>
+	{
+		PORTC = 0b10000000;
+  ec:	80 e8       	ldi	r24, 0x80	; 128
+  ee:	85 bb       	out	0x15, r24	; 21
+  f0:	03 c0       	rjmp	.+6      	; 0xf8 <__vector_1+0x38>
+	}
+	else
+	{
+	PORTC >>= 1;
+  f2:	85 b3       	in	r24, 0x15	; 21
+  f4:	86 95       	lsr	r24
+  f6:	85 bb       	out	0x15, r24	; 21
+
+	}
+	wait(500);
+  f8:	84 ef       	ldi	r24, 0xF4	; 244
+  fa:	91 e0       	ldi	r25, 0x01	; 1
+  fc:	d0 df       	rcall	.-96     	; 0x9e <wait>
+   }
+  fe:	ff 91       	pop	r31
+ 100:	ef 91       	pop	r30
+ 102:	bf 91       	pop	r27
+ 104:	af 91       	pop	r26
+ 106:	9f 91       	pop	r25
+ 108:	8f 91       	pop	r24
+ 10a:	7f 91       	pop	r23
+ 10c:	6f 91       	pop	r22
+ 10e:	5f 91       	pop	r21
+ 110:	4f 91       	pop	r20
+ 112:	3f 91       	pop	r19
+ 114:	2f 91       	pop	r18
+ 116:	0f 90       	pop	r0
+ 118:	0b be       	out	0x3b, r0	; 59
+ 11a:	0f 90       	pop	r0
+ 11c:	0f be       	out	0x3f, r0	; 63
+ 11e:	0f 90       	pop	r0
+ 120:	1f 90       	pop	r1
+ 122:	18 95       	reti
+
+00000124 <__vector_2>:
+
+// Laat de lichtjes steeds een plekje naar onder verspringen op het bord en zet hem weer
+// bovenaan als die de onderste lamp heeft bereikt.
+ISR( INT1_vect )
+{
+ 124:	1f 92       	push	r1
+ 126:	0f 92       	push	r0
+ 128:	0f b6       	in	r0, 0x3f	; 63
+ 12a:	0f 92       	push	r0
+ 12c:	11 24       	eor	r1, r1
+ 12e:	0b b6       	in	r0, 0x3b	; 59
+ 130:	0f 92       	push	r0
+ 132:	2f 93       	push	r18
+ 134:	3f 93       	push	r19
+ 136:	4f 93       	push	r20
+ 138:	5f 93       	push	r21
+ 13a:	6f 93       	push	r22
+ 13c:	7f 93       	push	r23
+ 13e:	8f 93       	push	r24
+ 140:	9f 93       	push	r25
+ 142:	af 93       	push	r26
+ 144:	bf 93       	push	r27
+ 146:	ef 93       	push	r30
+ 148:	ff 93       	push	r31
+	if(PORTC == 0b10000000)
+ 14a:	85 b3       	in	r24, 0x15	; 21
+ 14c:	80 38       	cpi	r24, 0x80	; 128
+ 14e:	19 f4       	brne	.+6      	; 0x156 <__vector_2+0x32>
+	{
+		PORTC = 0b00000001;
+ 150:	81 e0       	ldi	r24, 0x01	; 1
+ 152:	85 bb       	out	0x15, r24	; 21
+ 154:	03 c0       	rjmp	.+6      	; 0x15c <__vector_2+0x38>
+	}
+	else
+	{
+		PORTC <<= 1;
+ 156:	85 b3       	in	r24, 0x15	; 21
+ 158:	88 0f       	add	r24, r24
+ 15a:	85 bb       	out	0x15, r24	; 21
+	}
+    wait(500);
+ 15c:	84 ef       	ldi	r24, 0xF4	; 244
+ 15e:	91 e0       	ldi	r25, 0x01	; 1
+ 160:	9e df       	rcall	.-196    	; 0x9e <wait>
+}
+ 162:	ff 91       	pop	r31
+ 164:	ef 91       	pop	r30
+ 166:	bf 91       	pop	r27
+ 168:	af 91       	pop	r26
+ 16a:	9f 91       	pop	r25
+ 16c:	8f 91       	pop	r24
+ 16e:	7f 91       	pop	r23
+ 170:	6f 91       	pop	r22
+ 172:	5f 91       	pop	r21
+ 174:	4f 91       	pop	r20
+ 176:	3f 91       	pop	r19
+ 178:	2f 91       	pop	r18
+ 17a:	0f 90       	pop	r0
+ 17c:	0b be       	out	0x3b, r0	; 59
+ 17e:	0f 90       	pop	r0
+ 180:	0f be       	out	0x3f, r0	; 63
+ 182:	0f 90       	pop	r0
+ 184:	1f 90       	pop	r1
+ 186:	18 95       	reti
+
+00000188 <main>:
+notes:			Slow background task after init ISR
+Version :    	DMK, Initial code
+*******************************************************************/
+{
+	// Init I/O
+	DDRC = 0b11111111;
+ 188:	8f ef       	ldi	r24, 0xFF	; 255
+ 18a:	84 bb       	out	0x14, r24	; 20
+	DDRD = 0xF0;			// PORTD(7:4) output, PORTD(3:0) input	
+ 18c:	80 ef       	ldi	r24, 0xF0	; 240
+ 18e:	81 bb       	out	0x11, r24	; 17
+
+	PORTC = 0b00000001;
+ 190:	81 e0       	ldi	r24, 0x01	; 1
+ 192:	85 bb       	out	0x15, r24	; 21
+
+	// Init Interrupt hardware
+	EICRA |= 0b000011111;			// INT1 falling edge, INT0 rising edge
+ 194:	ea e6       	ldi	r30, 0x6A	; 106
+ 196:	f0 e0       	ldi	r31, 0x00	; 0
+ 198:	80 81       	ld	r24, Z
+ 19a:	8f 61       	ori	r24, 0x1F	; 31
+ 19c:	80 83       	st	Z, r24
+	EIMSK |= 0b00000011;			// Enable INT1 & INT0
+ 19e:	89 b7       	in	r24, 0x39	; 57
+ 1a0:	83 60       	ori	r24, 0x03	; 3
+ 1a2:	89 bf       	out	0x39, r24	; 57
+	
+	// Enable global interrupt system
+	//SREG = 0x80;			// Of direct via SREG of via wrapper
+	sei();				
+ 1a4:	78 94       	sei
+
+	while (1)
+	{
+		PORTD ^= (1<<7);	// Toggle PORTD.7
+ 1a6:	82 b3       	in	r24, 0x12	; 18
+ 1a8:	80 58       	subi	r24, 0x80	; 128
+ 1aa:	82 bb       	out	0x12, r24	; 18
+		wait( 500 );								
+ 1ac:	84 ef       	ldi	r24, 0xF4	; 244
+ 1ae:	91 e0       	ldi	r25, 0x01	; 1
+ 1b0:	76 df       	rcall	.-276    	; 0x9e <wait>
+	}
+ 1b2:	f9 cf       	rjmp	.-14     	; 0x1a6 <main+0x1e>
+
+000001b4 <_exit>:
+ 1b4:	f8 94       	cli
+
+000001b6 <__stop_program>:
+ 1b6:	ff cf       	rjmp	.-2      	; 0x1b6 <__stop_program>
